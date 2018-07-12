@@ -4,12 +4,32 @@
         <meta charset="UTF-8">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
         <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link type="text/css" rel="stylesheet" href="style.css">
 
         <title>Pig Game</title>
     </head>
 
     <body>
+      <div id="css-only-modals">
+        <input id="modal1" class="css-only-modal-check" type="checkbox" checked/>
+        <div class="css-only-modal">
+          <label for="modal1" class="css-only-modal-close"><i class="fa fa-times fa-2x"></i></label>
+          <h2>Rules of the Game</h2>
+          <hr />
+          <p>Welcome to Pig Game! Here follows a quick introduction to the game.</p>
+          <ul>
+            <li>Throw the dice as many times as you want.</li>
+            <li>You can choose to hold at any time and keep your current score.</li>
+            <li>If you hit a 1 = next players turn.</li>
+            <li>If you hit two 6's in a row = your round score AND total score is set to 0.</li>
+            <li>First one to reach <b>100 points</b> win!</li>
+          </ul>
+          <label for="modal1" class="css-only-modal-btn btn btn-primary btn-lg">Let's play</label>
+        </div>
+        <div id="screen-shade"></div>
+      </div>
+
         <div class="wrapper clearfix">
             <div class="player-0-panel active">
                 <div class="player-name" id="name-0">Player 1</div>
